@@ -88,6 +88,7 @@ public class UserController {
             if (user1.isEmpty()) {
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);
             }
+
             return new ResponseEntity<>(user1, HttpStatus.OK);
 
         } catch (Exception e) {
